@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Godoy</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/generalStyle.css">
+    <link rel="stylesheet" href="css/mobileStyle.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/icons/voltar.svg" alt="Clique para Fechar o menu" id="fechar-menu"></img>
+            <ul>
+                <li><a href="#sessao-sobre">Sobre Mim</a></li>
+                <li><a href="#sessao-habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-banner">
+            <img src="assets/icons/menu.svg" id="abrir-menu" alt="Clique para abrir o menu"></img>
+            <div id="particles-js" class="banner">
+                <div>
+                    <h1>Guilherme Godoy</h1>
+                    <h2>Desenvolvedor Full-stack</h2>     
+                    <a href="#projetos" class="estiloBotao">Projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sessao-sobre" class="sobreMim">
+            <div>
+                <img src="" alt="">
+                <div>
+                    <h1>Sobre Mim</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias a mollitia id excepturi expedita voluptatibus, ea est quos ut? Mollitia aspernatur ipsa eos corrupti ab beatae temporibus adipisci inventore!
+                    Hic quod corporis officia autem, minus maiores repellat iste recusandae quaerat iusto eligendi modi earum repudiandae culpa veniam accusamus perspiciatis a sapiente! Repellat deserunt perferendis natus eius delectus nostrum earum.</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <data value="2025">2023-2025</data>
+                        <h1>ETEC Arstitóteles Ferreira</h1>
+                        <p>Cursei Análise e Desenvolvimento de Sistemas</p>
+                    </li>
+                    <li>
+                        <data value="2025">2025</data>
+                        <h1>Começo da Faculdade</h1>
+                        <p>Iniciei o curso de Ciências da Computação</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sessao-habilidades" class="habilidades">
+            <div>
+                <h1>Habilidades</h1>
+                <ul>
+                    <li>
+                        <img src="assets/logos/html5.svg" alt="Selecionar HTML para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="html">
+                    </li>
+                    <li>
+                        <img src="assets/logos/css3.svg" alt="Selecionar CSS para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="css">
+                    </li>
+                    <li>
+                        <img src="assets/logos/javascript.svg" alt="Selecionar JavaScript para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="js">
+                    </li>
+                    <li>
+                        <img src="assets/logos/node.svg" alt="Selecionar Node.js para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="node">
+                    </li>
+                    <li>
+                        <img src="assets/logos/react.svg" alt="Selecionar React para ver detalhes sobre a tecnologia" class="logoTecnologia selecionada" data-id="react">
+                    </li>
+                    <li>
+                        <img src="assets/logos/tailwindcss.svg" alt="Selecionar Tailwind CSS para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="tailwind">
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="tecnologiaSelecionada">
+                <img src="assets/logos/react.svg" alt="" aria-live="polite" id="imgTecnologia">
+                <div>
+                    <h1>Conhecimentos em <span id="nomeTecnologia" aria-live="polite">React</span></h1>
+                    <p id="descTecnologia" aria-live="polite">Construção de interfaces de usuário dinâmicas e reutilizáveis, gerenciamento de estado com hooks, criação de componentes moduláveis e integração com APIs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h1>Projetos</h1>
+            <div>
+                <div class="cardProjeto">
+                    <img src="assets/fotoTeste.png" alt="Capa do projeto Teste" class="fotoProjeto">
+                    <div class="infoProjeto">
+                        <h2>Nome Projeto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, distinctio, nesciunt voluptatem dicta praesentium repellendus perferendis ea similique maxime labore illum corporis ducimus inventore veniam voluptatum quaerat. Nesciunt, dignissimos suscipit.</p>
+                    </div>
+                    <div class="container-botoes">
+                        <a rel="noopener noreferrer" class="estiloBotao">
+                            <img src="assets/icons/web.png" alt="Clique para ver o projeto online">
+                            Ver
+                        </a>
+                        <a rel="noopener noreferrer" class="estiloBotao">
+                            <img src="assets/icons/github.svg" alt="Clique para ver o repositório do projeto no Github">
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div>
+                <h1>Minhas Redes</h1>
+                <ul>
+                    <li>
+                    <a href="https://github.com/guilhermegodoydev" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/github.svg" alt="" class="logoCanal">
+                        <p>- Github</p>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="" rel="noopener noreferrer">
+                            <img src="assets/icons/linkedln.svg" alt="" class="logoCanal">
+                            <p>- Linkedln</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form>
+                <h1>Entre em contato</h1>
+                <div>
+                    <p><label for="nome">Seu Nome:</label></p>
+                    <input type="text" id="nome" name="nome">
+                </div>
+
+                <div>
+                    <p><label for="assunto">Assunto:</label></p>
+                    <input type="text" id="assunto" name="Assunto">
+                </div>
+
+                <div>
+                    <p><label for="mensagem">Mensagem:</label></p>
+                    <textarea type="text" id="mensagem" name="mensagem"></textarea>
+                </div>
+
+                <button class="estiloBotao">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
