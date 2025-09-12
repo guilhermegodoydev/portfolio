@@ -94,6 +94,8 @@ header ul li:hover {
     left: 5px;
     top: 2px;
     z-index: 1;
+    opacity: 0;
+    animation: aparecer 1s linear 1.5s forwards;
 }
 
 #abrir-menu, #fechar-menu {
@@ -422,11 +424,6 @@ header ul li:hover {
     justify-content: center;
 }
 
-.escondido {
-    display: none;
-    pointer-events: none;
-}
-
 .selecionada {
     outline: solid 2px var(--principal);
     border-radius: 16px;
@@ -437,6 +434,10 @@ header ul li:hover {
     box-shadow: 0 0 10px 5px black;
 }
 
+.escondido {
+    display: none;
+    pointer-events: none;
+}
 
 /* --------------------------------- */
 /* Animações                         */

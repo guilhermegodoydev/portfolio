@@ -7,6 +7,7 @@ const fecharMenu = document.getElementById("fechar-menu");
 const header = document.querySelector("header");
 const banner = document.querySelector(".container-banner");
 const links = document.querySelectorAll("header nav ul li a");
+const nav = document.querySelector("nav");
 
 let versaoMobile = false;
 let tecAtual = tecnologias[4];
@@ -42,10 +43,6 @@ let infoTecnologias = {
   }
 };
 
-window.addEventListener('load', atualizarVisibilidade)
-
-window.addEventListener('resize', atualizarVisibilidade);
-
 particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
@@ -78,7 +75,7 @@ tecnologias.forEach(tec => {
       console.log(tec);
       tec.classList.add("selecionada");
       tecAtual.classList.remove("selecionada");
-  
+      
       tecAtual = tec;
     }
   });
@@ -101,18 +98,22 @@ links.forEach(link => {
   })
 });
 
-function atualizarVisibilidade() {
+window.addEventListener('load', alterarVisibilidadeMenu);
+
+window.addEventListener('resize', alterarVisibilidadeMenu);
+
+function alterarVisibilidadeMenu() {
   if (window.innerWidth <= 700) {
-    versaoMobile = true
+    versaoMobile = true;
     header.classList.add("escondido");
-    fecharMenu.classList.remove("escondido");
     abrirMenu.classList.remove("escondido");
+    fecharMenu.classList.remove("escondido");
   }
   else {
     versaoMobile = false;
     header.classList.remove("escondido");
-    fecharMenu.classList.add("escondido");
     abrirMenu.classList.add("escondido");
+    fecharMenu.classList.add("escondido");
   }
 }
 
