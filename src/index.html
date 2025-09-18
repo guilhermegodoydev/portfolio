@@ -151,23 +151,22 @@
 
             <!-- O atributo data-netlify é utilizado para habilitar o serviço de coleta de dados do formulário pela Netlify -->
             <form name="contato" method="POST" data-netlify="true">
-
                 <input type="hidden" name="form-name" value="contato">
 
                 <h1>Entre em contato</h1>
                 <div>
                     <p><label for="nome">Seu Nome:</label></p>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" required>
                 </div>
 
                 <div>
                     <p><label for="assunto">Assunto:</label></p>
-                    <input type="text" id="assunto" name="Assunto">
+                    <input type="text" id="assunto" name="assunto" required>
                 </div>
 
                 <div>
                     <p><label for="mensagem">Mensagem:</label></p>
-                    <textarea type="text" id="mensagem" name="mensagem"></textarea>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
                 </div>
 
                 <button class="estiloBotao" type="submit">Enviar</button>
