@@ -148,7 +148,13 @@
                     </li>
                 </ul>
             </div>
-            <form>
+
+            <!-- O atributo data-netlify é utilizado para habilitar o serviço de coleta de dados do formulário pela Netlify -->
+            <form name="contato" method="POST" data-netlify="true">
+
+                <!-- Input para proteção contra spam -->
+                <input type="hidden" name="contato" value="contato">
+
                 <h1>Entre em contato</h1>
                 <div>
                     <p><label for="nome">Seu Nome:</label></p>
@@ -165,7 +171,7 @@
                     <textarea type="text" id="mensagem" name="mensagem"></textarea>
                 </div>
 
-                <button class="estiloBotao">Enviar</button>
+                <button class="estiloBotao" type="submit">Enviar</button>
             </form>
         </section>
     </main>
