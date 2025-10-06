@@ -408,6 +408,9 @@ header ul li:hover {
     height: 50px;
 }
 
+#mensagem {
+    resize: none;
+}
 
 /* --------------------------------- */
 /* Utils                             */
