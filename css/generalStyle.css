@@ -46,7 +46,9 @@ hr {
 }
 
 section:not(.container-banner) {
-    margin: 10em 50px;
+    margin: 0 50px;
+    padding-top: 10em;
+    margin-bottom: 10em;
 }
 
 input,textarea {
@@ -362,7 +364,7 @@ header ul li:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
-    margin-top: 0;
+    padding-top: 0;
 }
 
 #contato ul li {
