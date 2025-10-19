@@ -396,6 +396,7 @@ textarea {
   width: 100%;
   border: none;
   box-shadow: none;
+  border-radius: 5px;
 }
 
 .logoCanal {
