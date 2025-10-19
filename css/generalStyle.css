@@ -1,471 +1,464 @@
 :root {
-    --principal: #1D838E;
+  --principal: #1d838e;
 }
 
 * {
-    color: white;
-    font-family: "Inter", sans-serif;
+  color: white;
+  font-family: "Inter", sans-serif;
 }
-
 
 /* --------------------------------- */
 /* Base                              */
 /* --------------------------------- */
 
-
 body {
-    margin: 0;
-    background-image: url(../assets/fundo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin: 0;
+  background-image: url(../assets/fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:not(.estiloBotao) {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
 }
 
-h1, h1 span {
-    font-family: "Montserrat", sans-serif;
+h1,
+h1 span {
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
-    list-style-type: none;
-    padding-inline: 0;
-    margin-block: 0;
+  list-style-type: none;
+  padding-inline: 0;
+  margin-block: 0;
 }
 
 hr {
-    height: 100%;
-    margin: 0 auto;
+  height: 100%;
+  margin: 0 auto;
 }
 
 section:not(.container-banner) {
-    margin: 0 50px;
-    padding-top: 10em;
-    margin-bottom: 10em;
+  margin: 0 50px;
+  padding-top: 10em;
+  margin-bottom: 10em;
 }
 
-input,textarea {
-    padding: 5px 10px;
-    color: black;
+input,
+textarea {
+  padding: 5px 10px;
+  color: black;
 }
-
 
 /* --------------------------------- */
 /* Header                            */
 /* --------------------------------- */
 
-
 header {
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
-    padding: 5px;
-    opacity: 0;
-    animation: aparecer 3s linear 1.5s forwards;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  padding: 5px;
+  opacity: 0;
+  animation: aparecer 3s linear 1.5s forwards;
 }
 
 header ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 header ul li {
-    border: solid 2px var(--principal);
-    width: 10%;
-    text-align: center;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 0 5px var(--principal);
-    transition: 0.3s;
+  border: solid 2px var(--principal);
+  width: 10%;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--principal);
+  transition: 0.3s;
 }
 
 header ul li:hover {
-    background-color: var(--principal);
+  background-color: var(--principal);
 }
 
 #abrir-menu {
-    position: absolute;
-    left: 5px;
-    top: 2px;
-    z-index: 1;
-    opacity: 0;
-    animation: aparecer 1s linear 1.5s forwards;
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  z-index: 1;
+  opacity: 0;
+  animation: aparecer 1s linear 1.5s forwards;
 }
 
-#abrir-menu, #fechar-menu {
-    background-color: transparent;
-    border: none;
-    width: 50px;
-    height: 50px;
+#abrir-menu,
+#fechar-menu {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
 }
 
 /* --------------------------------- */
 /* Banner                            */
 /* --------------------------------- */
 
-
 .banner {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    background-image: radial-gradient(
-        ellipse at bottom,
-        #216f86 5%,
-        #0b4c5f 30%,
-        #022f3d 46%,
-        #010A11
-    );
-    background-attachment: fixed;
-    opacity: 0;
-    animation: aparecer 3s linear 1s forwards;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-image: radial-gradient(
+    ellipse at bottom,
+    #216f86 5%,
+    #0b4c5f 30%,
+    #022f3d 46%,
+    #010a11
+  );
+  background-attachment: fixed;
+  opacity: 0;
+  animation: aparecer 3s linear 1s forwards;
 }
 
 .container-banner {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: black;
-    z-index: -1;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: -1;
+  overflow: hidden;
 }
 
-.banner div {position: absolute;}
+.banner div {
+  position: absolute;
+}
 
 .banner h1 {
-    font-size: 3rem;
-    margin: 0;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .banner h2 {
-    font-weight: normal;
-    color: rgb(167, 167, 167);
-    margin-top: 5px;
-    margin-bottom: 20px;
+  font-weight: normal;
+  color: rgb(167, 167, 167);
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .particles-js-canvas-el {
-    transform: translateY(100%);
-    animation: surgir 30s linear 3.5s forwards;
+  transform: translateY(100%);
+  animation: surgir 30s linear 3.5s forwards;
 }
-
 
 /* --------------------------------- */
 /* Sessão - Sobre Mim                */
 /* --------------------------------- */
 
-
 .sobreMim > div:first-child {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .sobreMim h1 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .sobreMim img {
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    border-radius: 100%;
-    border-top: solid 3px aqua;
-    border-left: solid 3px aqua;
-    border-bottom: solid 3px #1D838E;
-    border-right: solid 3px #1D838E;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 100%;
+  border-top: solid 3px aqua;
+  border-left: solid 3px aqua;
+  border-bottom: solid 3px #1d838e;
+  border-right: solid 3px #1d838e;
 }
 
 .timeline {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .timeline ul {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(150px, 1fr);
-    overflow-x: auto;
-    padding-top: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(150px, 1fr);
+  overflow-x: auto;
+  padding-top: 20px;
 }
 
 .timeline ul li {
-    position: relative;
-    text-align: center;
-    border-top: solid 3px aqua;
-    padding-top: 20px;
+  position: relative;
+  text-align: center;
+  border-top: solid 3px aqua;
+  padding-top: 20px;
 }
 
 .timeline ul li h1 {
-    font-size: 20px;
-    margin: 0;
+  font-size: 20px;
+  margin: 0;
 }
 
 .timeline ul li:before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: -18px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 100%;
-    border-top: solid 3px aqua;
-    border-left: solid 3px aqua;
-    border-bottom: solid 3px #1D838E;
-    border-right: solid 3px #1D838E;
-    background-color: #161517;
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  border-top: solid 3px aqua;
+  border-left: solid 3px aqua;
+  border-bottom: solid 3px #1d838e;
+  border-right: solid 3px #1d838e;
+  background-color: #161517;
 }
-
 
 /* --------------------------------- */
 /* Sessão - Habilidades              */
 /* --------------------------------- */
 
-
 .habilidades {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 40% 10% 45%;
-    justify-content: space-between;
-    min-height: 61vh;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 40% 10% 45%;
+  justify-content: space-between;
+  min-height: 61vh;
 }
 
 .habilidades ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .habilidades h1 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .habilidades hr {
-    border: solid 2px #216f86;
-    border-radius: 10px;
+  border: solid 2px #216f86;
+  border-radius: 10px;
 }
 
 .tecnologiaSelecionada {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .tecnologiaSelecionada img {
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .logoTecnologia {
-    padding: 5px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
-
 
 /* --------------------------------- */
 /* Sessão - Projetos                 */
 /* --------------------------------- */
 
-
 #projetos {
-    background-color: #1d1c1e;
-    padding: 2em;
-    margin: 0;
-    margin-bottom: 2em;
+  background-color: #1d1c1e;
+  padding: 2em;
+  margin: 0;
+  margin-bottom: 2em;
 }
 
 #projetos > h1 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
-#projetos > div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
+#projetos > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
 }
 
 .cardProjeto {
-    background-color: rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(6.4px);
-    -webkit-backdrop-filter: blur(6.4px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 16px;
-    height: 400px;
-    box-shadow: 0 0 10px black;
+  background-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  height: 400px;
+  box-shadow: 0 0 10px black;
 }
 
 .cardProjeto a {
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 46%;
-    padding: 5px 0px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 46%;
+  padding: 5px 0px;
 }
 
 .cardProjeto a img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .cardProjeto .estiloBotao {
-    background-color: #151416;
-    box-shadow: none;
+  background-color: #151416;
+  box-shadow: none;
 }
 
 .fotoProjeto {
-    height: 200px;
-    width: 100%;
-    border-radius: 16px 16px 0 0;
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
 }
 
 .container-botoes {
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #3c3c3d;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #3c3c3d;
 }
 
 .infoProjeto {
-    padding: 10px;
-    overflow-y: auto;
-    max-height: 120px;
+  padding: 5px 10px;
+  overflow-y: auto;
+  max-height: 120px;
 }
 
-.infoProjeto h1 {
-    font-size: 1.2rem;
+.infoProjeto h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 0;
 }
 
-.infoProjeto h1,p {
-    margin: 2px 0;
+.infoProjeto p {
+  font-weight: 300;
 }
-
 
 /* --------------------------------- */
 /* Sessão - Contato                  */
 /* --------------------------------- */
 
-
 #contato {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
-    padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  padding-top: 0;
 }
 
 #contato ul li {
-    width: fit-content;
-    margin: 10px 0;
+  width: fit-content;
+  margin: 10px 0;
 }
 
-#contato ul li a{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#contato ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #contato form {
-    width: 45%;
+  width: 45%;
 }
 
 #contato form > div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-#contato form input,textarea{
-    border-radius: 16px;
-    border: none;
+#contato form input,
+textarea {
+  border-radius: 5px;
+  border: none;
 }
 
 #contato #mensagem {
-    height: 250px;
+  height: 250px;
 }
 
 #contato button {
-    width: 100%;
-    border: none;
-    box-shadow: none;
+  width: 100%;
+  border: none;
+  box-shadow: none;
 }
 
 .logoCanal {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 #mensagem {
-    resize: none;
+  resize: none;
 }
 
 /* --------------------------------- */
 /* Utils                             */
 /* --------------------------------- */
 
-
 .estiloBotao {
-    background-color: #166269;
-    border-radius: 50px;
-    box-shadow: 0 0 5px #08becf;
-    display: flex;
-    width: 120px;
-    height: 30px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+  background-color: #166269;
+  border-radius: 50px;
+  box-shadow: 0 0 5px #08becf;
+  display: flex;
+  width: 120px;
+  height: 30px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .selecionada {
-    outline: solid 2px var(--principal);
-    border-radius: 16px;
+  outline: solid 2px var(--principal);
+  border-radius: 16px;
 }
 
 .header-scroll {
-    background-color: #161517;
-    box-shadow: 0 0 10px 5px black;
+  background-color: #161517;
+  box-shadow: 0 0 10px 5px black;
 }
 
 .escondido {
-    display: none;
-    pointer-events: none;
+  display: none;
+  pointer-events: none;
 }
 
 /* --------------------------------- */
 /* Animações                         */
 /* --------------------------------- */
 
-
 @keyframes aparecer {
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes surgir {
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes surgirPelaLateral {
-    0% {
-        left: -100%;
-    }
-    100% {
-        left: 0;
-    }
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
 }
