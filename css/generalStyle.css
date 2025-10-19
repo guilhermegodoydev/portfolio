@@ -440,6 +440,25 @@ textarea {
 }
 
 /* --------------------------------- */
+/* Scroll                         */
+/* --------------------------------- */
+
+::-webkit-scrollbar {
+  background-color: rgb(48, 48, 48);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--principal);
+  border-radius: 10px;
+  cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+}
+
+/* --------------------------------- */
 /* Animações                         */
 /* --------------------------------- */
 
