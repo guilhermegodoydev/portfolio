@@ -356,9 +356,22 @@ header ul li:hover {
 
 #contato {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 2em;
   padding-top: 0;
+  height: 100vh;
+}
+
+#contato h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#contato ul {
+  display: flex;
+  gap: 20px;
 }
 
 #contato ul li {
@@ -372,40 +385,9 @@ header ul li:hover {
   gap: 10px;
 }
 
-#contato form {
-  width: 45%;
-}
-
-#contato form > div {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-#contato form input,
-textarea {
-  border-radius: 5px;
-  border: none;
-}
-
-#contato #mensagem {
-  height: 250px;
-}
-
-#contato button {
-  width: 100%;
-  border: none;
-  box-shadow: none;
-  border-radius: 5px;
-}
-
 .logoCanal {
   width: 50px;
   height: 50px;
-}
-
-#mensagem {
-  resize: none;
 }
 
 /* --------------------------------- */

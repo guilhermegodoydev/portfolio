@@ -127,12 +127,4 @@
     #contato {
         flex-direction: column;
     }
-
-    #contato form {
-        width: auto;
-    }
-
-    #contato form input, textarea {
-        width: calc(100% - 21px);
-    }
 }
