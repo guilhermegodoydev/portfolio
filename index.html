@@ -16,10 +16,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/snapport/dist/snap-port.css">
     <link rel="stylesheet" href="css/generalStyle.css">
     <link rel="stylesheet" href="css/mobileStyle.css">
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+
+    <script type="module">
+    import { initPortfolio } from 'https://cdn.jsdelivr.net/npm/snapport/dist/snap-port.js';
+
+    initPortfolio('guilhermegodoydev', {
+        tag: 'port-project',                      
+        searchContainer: 'busca-container',     
+        filtersContainer: 'filtros-container',  
+        projectsContainer: 'projetos-cards'
+    });
+    </script>
 </head>
 <body>
     <header class="escondido">
@@ -108,43 +121,9 @@
 
         <section id="projetos">
             <h1>Projetos</h1>
-            <div>
-                <div class="cardProjeto">
-                    <img src="assets/projetos/moedaio.png" alt="Capa do projeto Teste" class="fotoProjeto">
-                    <div class="infoProjeto">
-                        <h2>Moedaio</h2>
-                        <p>Aplicação web que permite converter valores entre diferentes moedas com base em cotações atualizadas em tempo real.
-                        Além da conversão simples, o projeto inclui histórico de conversões e gráficos interativos que mostram a variação cambial em períodos como 7 dias, 30 dias, 6 meses e 1 ano.</p>
-                    </div>
-                    <div class="container-botoes">
-                        <a href="https://moedaio.netlify.app/" rel="noopener noreferrer" target="_blank" class="estiloBotao">
-                            <img src="assets/icons/web.png" alt="Clique para ver o projeto online">
-                            Ver
-                        </a>
-                        <a href="https://github.com/guilhermegodoydev/conversor-moeda" target="_blank" rel="noopener noreferrer" class="estiloBotao">
-                            <img src="assets/icons/github.svg" alt="Clique para ver o repositório do projeto no Github">
-                            Github
-                        </a>
-                    </div>
-                </div>
-                <div class="cardProjeto">
-                    <img src="assets/projetos/cepmap.png" alt="Capa do projeto Teste" class="fotoProjeto">
-                    <div class="infoProjeto">
-                        <h2>CepMap</h2>
-                        <p>Site para consultar CEPs a partir de endereços ou localizar endereços a partir de CEPs, com integração a uma API pública. O projeto também inclui um mapa interativo que exibe visualmente a localização.</p>
-                    </div>
-                    <div class="container-botoes">
-                        <a href="https://cepmap.netlify.app/" rel="noopener noreferrer" target="_blank" class="estiloBotao">
-                            <img src="assets/icons/web.png" alt="Clique para ver o projeto online">
-                            Ver
-                        </a>
-                        <a href="https://github.com/guilhermegodoydev/buscador-cep" target="_blank" rel="noopener noreferrer" class="estiloBotao">
-                            <img src="assets/icons/github.svg" alt="Clique para ver o repositório do projeto no Github">
-                            Github
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <div id="busca-container"></div>
+            <div id="filtros-container"></div>
+            <div id="projetos-cards"></div>
         </section>
 
         <section id="contato">

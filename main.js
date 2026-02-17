@@ -49,10 +49,6 @@ let infoTecnologias = {
   },
 };
 
-particlesJS.load("particles-js", "assets/particles.json", function () {
-  console.log("callback - particles.js config loaded");
-});
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(
     (entry) => {
@@ -80,7 +76,6 @@ tecnologias.forEach((tec) => {
       imgTecnologia.setAttribute("alt", infoTecnologias.alt);
       descTecnologia.textContent = informacoesTec.descricao;
 
-      console.log(tec);
       tec.classList.add("selecionada");
       tecAtual.classList.remove("selecionada");
 
