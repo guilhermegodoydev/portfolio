@@ -1,0 +1,8 @@
+export const stacks = [
+    { name: "React", description: "Construção de interfaces de usuário dinâmicas e reutilizáveis, gerenciamento de estado com hooks, criação de componentes moduláveis e integração com APIs.", style: "react"},
+    { name: "C#(CSharp)", description: "Desenvolvimento de APIs REST utilizando C# e ASP.NET, com foco em desempenho e organização de código. Aplicação de princípios de programação orientada. Integração com banco de dados MySQL, garantindo eficiência e segurança nas operações.", style: "csharp"},
+    { name: "Tailwind CSS", description: "Desenvolvimento de interfaces web responsivas e organizadas usando classes utilitárias, com controle de estilos em camadas (layers) para design modular, manutenção fácil e prototipagem rápida.", style: "tailwind"},
+    { name: "JavaScript", description: "Desenvolvimento de interatividade e funcionalidades dinâmicas em páginas web, manipulação do DOM, requisições a APIs, validação de formulários e implementação de lógica de front-end.", style: "javascript"},
+    { name: "SQL", description: "Conhecimento sólido na manipulação de bancos de dados relacionais. Realizo operações essenciais de consulta, inserção e atualização de dados, garantindo que a informação esteja estruturada e acessível para a aplicação.", style: "sql"},
+    { name: "Aprendendo", description: "Aprofundando conhecimentos em ecossistemas de CI/CD, como Git Actions e Git Flow, para domínio do ciclo de vida de software. Em paralelo, estudo da arquitetura FSD (Feature-Sliced Design) e padrões modulares para construção de sistemas mais organizados.", style: "learning"}
+];

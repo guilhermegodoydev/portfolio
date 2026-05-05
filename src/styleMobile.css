@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+
+    #banner { height: 400px; }
+
+    #banner h1 { font-size: 36px; }
+
+    #banner h2 { font-size: 16px; }
+
+    #banner span { font-size: 32px; }
+
+    #banner img {
+        width: 132px;
+        height: 132px;
+        top: -10px;
+        right: -10px;
+    }
+
+    #about-me { display: flex; flex-direction: column; }
+
+    #contact p { text-align: center; }
+
+    #projects { flex-direction: column; }
+
+    #projects { gap: 5px; }
+
+    #projects > div:nth-of-type(1) { width: 100%;}
+
+    .projects-list { display: flex; gap: 10px; overflow-y: auto; }
+
+    .numero, .pontos { display: none; }
+
+    #projects .project-display { width: 100%; margin-top: 20px ;}
+
+    #projects #project-name { font-size: 2rem; }
+
+    #projects .project-display .description-box { margin-top: 20px;}
+
+    .sessionStacks {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        border: none;
+        margin: 0 20px;
+    }
+
+    .description-box { min-height: 300px; height: auto; max-height: none;}
+    .description-box p { margin: 0; }
+
+    .projects-list li,button { text-wrap: nowrap;}
+
+    header nav ul li a { font-size: 1.1rem; }
+}

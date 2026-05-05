@@ -1,151 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <title>Guilherme Godoy</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilherme Godoy | Desenvolvedor Fullstack</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/snapport/dist/snap-port.css">
-    <link rel="stylesheet" href="css/generalStyle.css">
-    <link rel="stylesheet" href="css/mobileStyle.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-
-    <script type="module">
-    import { initPortfolio } from 'https://cdn.jsdelivr.net/npm/snapport/dist/snap-port.js';
-
-    initPortfolio('guilhermegodoydev', {
-        tag: 'port-project',                      
-        searchContainer: 'busca-container',     
-        filtersContainer: 'filtros-container',  
-        projectsContainer: 'projetos-cards'
-    });
-    </script>
-</head>
-<body>
-    <header class="escondido">
-        <nav>
-            <img src="assets/icons/voltar.svg" alt="Clique para Fechar o menu" id="fechar-menu" class="escondido"></img>
-            <ul>
-                <li><a href="#sessao-sobre">Sobre Mim</a></li>
-                <li><a href="#sessao-habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/styleMobile.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about-me">Sobre Mim</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#stacks">Habilidades</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="container-banner">
-            <img src="assets/icons/menu.svg" id="abrir-menu" alt="Clique para abrir o menu" class="escondido"></img>
-            <div id="particles-js" class="banner">
-                <div>
-                    <h1>Guilherme Godoy</h1>
-                    <h2>Desenvolvedor Full-stack</h2>     
-                    <a href="#projetos" class="estiloBotao">Ver Projetos</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="sessao-sobre" class="sobreMim">
-            <div>
-                <div>
-                    <h1>Sobre Mim</h1>
-                    <p>Gosto de criar aplicações que façam sentido para quem usa. Analiso os desafios de cada projeto e transformo ideias em soluções funcionais, claras e bem estruturadas. Valorizo código limpo, boas práticas e aprendizado constante, usando cada experiência para evoluir tecnicamente e entregar impacto real para quem interage com minhas aplicações.</p>
-                </div>
-            </div>
-
-            <div class="timeline">
-                <ul>
-                    <li>
-                        <data value="2025">2023-2025</data>
-                        <h1>ETEC Arstitóteles Ferreira</h1>
-                        <p>Cursei Análise e Desenvolvimento de Sistemas</p>
-                    </li>
-                    <li>
-                        <data value="2025">2025</data>
-                        <h1>Começo da Faculdade</h1>
-                        <p>Iniciei o curso de Ciências da Computação</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="sessao-habilidades" class="habilidades">
-            <div>
-                <h1>Habilidades</h1>
-                <ul>
-                    <li>
-                        <img src="assets/logos/html5.svg" alt="Selecionar HTML para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="html">
-                    </li>
-                    <li>
-                        <img src="assets/logos/css3.svg" alt="Selecionar CSS para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="css">
-                    </li>
-                    <li>
-                        <img src="assets/logos/javascript.svg" alt="Selecionar JavaScript para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="js">
-                    </li>
-                    <li>
-                        <img src="assets/logos/csharp.svg" alt="Selecionar Node.js para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="csharp">
-                    </li>
-                    <li>
-                        <img src="assets/logos/react.svg" alt="Selecionar React para ver detalhes sobre a tecnologia" class="logoTecnologia selecionada" data-id="react">
-                    </li>
-                    <li>
-                        <img src="assets/logos/tailwindcss.svg" alt="Selecionar Tailwind CSS para ver detalhes sobre a tecnologia" class="logoTecnologia" data-id="tailwind">
-                    </li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div class="tecnologiaSelecionada">
-                <img src="assets/logos/react.svg" alt="" aria-live="polite" id="imgTecnologia">
-                <div>
-                    <h1>Conhecimentos em <span id="nomeTecnologia" aria-live="polite">React</span></h1>
-                    <p id="descTecnologia" aria-live="polite">Construção de interfaces de usuário dinâmicas e reutilizáveis, gerenciamento de estado com hooks, criação de componentes moduláveis e integração com APIs.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projetos">
-            <h1>Projetos</h1>
-            <div id="busca-container"></div>
-            <div id="filtros-container"></div>
-            <div id="projetos-cards"></div>
-        </section>
-
-        <section id="contato">
-            <h1>Vamos trabalhar juntos? Entre em contato!</h1>
+      <section id="banner">
+        <h1>GUILHERME GODOY</h1>
+        <h2>Desenvolvedor de Software com foco em desenvolvimento web</h2>
+        <img src="src/assets/papel.avif" alt="">
+  
+        <span aria-hidden="true">SOFTWARE GAZETTE</span>
+        <span aria-hidden="true">FRONT-PAGE DEV REPORT</span>
+      </section>
+  
+      <section id="about-me">
+        <div class="editorial-content">
+          <h2 class="section-title">Editorial: Linha Técnica</h2>
+          <hr/>
+          <p>Gosto de criar aplicações que façam sentido para quem usa. Analiso os desafios de cada projeto e transformo ideias em soluções funcionais, claras e bem estruturadas. Valorizo código limpo, boas práticas e aprendizado constante, usando cada experiência para evoluir tecnicamente e entregar impacto real para quem interage com minhas aplicações.</p>
+        </div>
+  
+        <div class="classifieds-card">
+            <h2 class="section-title">Classificados</h2>
+            <hr/>
             <ul>
-                <li>
-                    <a href="https://github.com/guilhermegodoydev" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/icons/github.svg" alt="Logo do Github" class="logoCanal">
-                        <p>- Github</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/guilherme-godoy-495407389/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/icons/linkedln.svg" alt="Logo do Linkedin" class="logoCanal">
-                        <p>- Linkedln</p>
-                    </a>
-                </li>
+                <li>Foco: Estágio ou vaga Júnior</li>
+                <li>Especificação: Desenvolvimento Web</li>
             </ul>
-        </section>
+        </div>
+  
+        <div id="timeline">
+          <hr>
+          <div class="timeline-card">
+            <p>2023-2025</p>
+            <p>ETEC Aristóteles Ferreira</p>
+            <p>Análise e Desenvolvimento de Sistemas</p>
+          </div>
+          <div class="timeline-card">
+            <p>2025</p>
+            <p>Início da Faculdade</p>
+            <p>Iniciei Ciências da Computação</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="projects">
+        <div class="projects-sidebar">
+            <div class="projects-menu">
+              <h2 class="section-title">Projetos</h2>
+              <hr>
+              <ul class="projects-list"><li>Carregando...</li></ul>
+            </div>
+
+            <div class="description-box">
+                <p id="project-description">Carregando...</p>
+            </div>
+        </div>
+
+        <div class="project-display">
+            <h2 class="section-title" id="project-name">Carregando...</h2>
+            <hr/>
+            <div id="image-container" class="loading">
+              <img id="project-image" src="" alt="">
+            </div>
+        </div>
+      </section>
+  
+      <section id="stacks" class="sessionStacks"></section>
+  
+      <section id="contact">
+        <div>
+          <h2 class="section-title">Veja Também</h2>
+          <hr>
+          <a href="https://github.com/guilhermegodoydev/" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="https://www.linkedin.com/in/guilherme-godoy-495407389/" target="_blank" rel="noopener noreferrer" >Linkedin</a>
+        </div>
+  
+        <p>Obrigado pela leitura. <em>Fim da edição de número 2.</em></p>
+      </section>
     </main>
 
-    <!-- Scripts -->
-    <script src="main.js"></script>
-</body>
+    <footer></footer>
+
+    <svg style="position: absolute; width: 0; height: 0; pointer-events: none;">
+      <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+      </filter>
+    </svg>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
