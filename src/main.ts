@@ -44,12 +44,8 @@ function updateProjectDisplay(project: SanitizedRepo) {
     projectName.setAttribute("title", project.name);
     projectDescription.textContent = project.description || "Nenhuma descrição disponível para este projeto.";
     
-    projectImage.src = `src/assets/projects/${project.name}.webp`;
+    projectImage.src = `/projects/${project.name.toLowerCase()}.webp`;
     projectImage.alt = `Thumbnail do projeto ${project.name}`;
-    
-    projectImage.onerror = () => {
-        projectImage.src = "src/assets/projects/default.webp";
-    };
 }
 
 function renderProjects(projects: SanitizedRepo[]) {
