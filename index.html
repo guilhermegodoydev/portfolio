@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guilherme Godoy · Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio de Guilherme Godoy, desenvolvedor full stack em busca de estágio. React, TypeScript, Next.js, .NET e PostgreSQL.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guilherme Godoy · Desenvolvedor Full Stack">
+    <meta property="og:description" content="Construo aplicações web de ponta a ponta.">
+    <!-- TODO: <meta property="og:image" content="https://SEU-DOMINIO/og.png"> -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Crect x='10' y='10' width='12' height='12' fill='%23c2410c'/%3E%3C/svg%3E">
+  </head>
+  <body class="bg-paper font-mono text-[17px] leading-relaxed text-ink">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-ink focus:px-4 focus:py-2 focus:text-white">Pular para o conteúdo</a>
+
+    <header class="flex flex-wrap items-center justify-between gap-3 border-b-4 border-double border-ink px-6 py-4 md:px-16">
+      <p class="font-display text-lg uppercase tracking-[.3em]">Software Gazette</p>
+      <nav aria-label="Principal">
+        <ul class="flex flex-wrap gap-x-7 gap-y-1 font-display text-xl uppercase">
+          <li><a class="hover:text-accent" href="#sobre">Sobre mim</a></li>
+          <li><a class="hover:text-accent" href="#projetos">Projetos</a></li>
+          <li><a class="hover:text-accent" href="#habilidades">Habilidades</a></li>
+          <li><a class="hover:text-accent" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Topo -->
+      <section class="relative grid overflow-hidden border-b border-ink md:grid-cols-[1fr_360px]">
+        <p aria-hidden="true" class="pointer-events-none absolute left-4 top-10 hidden select-none font-display text-5xl uppercase tracking-widest text-ink/[.07] [writing-mode:vertical-rl] [transform:rotate(180deg)] lg:block">Software Gazette</p>
+        <p aria-hidden="true" class="pointer-events-none absolute -bottom-6 left-24 hidden select-none whitespace-nowrap font-display text-[9rem] uppercase text-ink/[.06] md:block">Front-Page Dev Report</p>
+
+        <div class="relative z-10 px-6 pb-16 pt-14 md:px-16 lg:pl-28">
+          <p class="rise mb-3 text-sm font-bold uppercase tracking-[.3em] text-accent">Primeira página · Dev report</p>
+          <h1 class="rise rise-2 font-display text-[clamp(4.5rem,14vw,10.5rem)] uppercase leading-[.85]">Guilherme Godoy</h1>
+          <p class="rise rise-3 mt-3 font-display text-2xl uppercase tracking-[.22em] md:text-3xl">Desenvolvedor Full Stack</p>
+        </div>
+
+        <aside class="relative z-10 px-6 pb-12 md:px-0 md:py-14 md:pr-16">
+          <div class="border-2 border-dotted border-ink p-6">
+            <h2 class="mb-3 border-b border-ink pb-1 font-display text-3xl uppercase">Classificados</h2>
+            <ul class="ml-5 list-disc text-base marker:text-accent">
+              <li>Especificação: desenvolvimento web</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" aria-labelledby="t-sobre" data-reveal class="grid gap-10 border-b border-ink px-6 py-12 md:grid-cols-[1.25fr_1px_1fr] md:gap-11 md:px-16">
+        <div>
+          <h2 id="t-sobre" class="mb-4 border-b-[3px] border-ink pb-1 font-display text-4xl uppercase">Editorial: linha técnica</h2>
+          <p>Gosto de criar aplicações que façam sentido para quem usa. Analiso os desafios de cada projeto e transformo ideias em soluções funcionais, claras e bem estruturadas. Valorizo código limpo, boas práticas e aprendizado constante, usando cada experiência para evoluir tecnicamente e entregar impacto real para quem interage com minhas aplicações.</p>
+        </div>
+        <div class="hidden bg-ink md:block" aria-hidden="true"></div>
+        <div>
+          <h2 class="mb-4 border-b-[3px] border-ink pb-1 font-display text-4xl uppercase">Formação</h2>
+          <ul id="timeline"></ul>
+        </div>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" aria-labelledby="t-proj" data-reveal class="border-b border-ink px-6 py-12 md:px-16">
+        <h2 id="t-proj" class="mb-6 border-b-[3px] border-ink pb-1 font-display text-4xl uppercase">Projetos</h2>
+        <div class="grid gap-8 md:grid-cols-[1.35fr_1px_1fr] md:gap-11">
+          <div id="panel" role="tabpanel" tabindex="0"></div>
+          <div class="hidden bg-ink md:block" aria-hidden="true"></div>
+          <div>
+            <p class="mb-2 text-sm uppercase tracking-widest text-muted" id="tabs-label">Índice de projetos</p>
+            <div id="tabs" role="tablist" aria-labelledby="tabs-label" aria-orientation="vertical"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Habilidades -->
+      <section id="habilidades" aria-labelledby="t-skills" data-reveal class="border-b-4 border-double border-ink px-6 py-12 md:px-16">
+        <h2 id="t-skills" class="mb-6 border-b-[3px] border-ink pb-1 font-display text-4xl uppercase">Habilidades</h2>
+        <div id="skills" class="grid gap-6 md:grid-cols-4 md:gap-0"></div>
+      </section>
+    </main>
+
+    <footer id="contato" class="px-6 pb-8 pt-12 text-center md:px-16">
+      <h2 class="inline-block border-b-[3px] border-ink font-display text-4xl uppercase">Veja também</h2>
+      <ul class="mt-3 font-display text-3xl uppercase">
+        <li><a class="hover:text-accent" target="_blank" rel="noopener" rel="noreferrer" href="https://github.com/guilhermegodoydev">GitHub</a></li>
+        <li><a class="hover:text-accent" target="_blank" rel="noopener" rel="noreferrer" href="https://www.linkedin.com/in/guilherme-g-495407389/">LinkedIn</a></li>
+      </ul>
+      <p class="mt-8 text-sm italic">Obrigado pela leitura. Fim da edição. <span class="text-accent" aria-hidden="true">■</span></p>
+    </footer>
+
+    <dialog id="gallery" aria-label="Galeria de telas" class="m-auto max-h-[92vh] w-[min(1100px,94vw)] overflow-auto border-2 border-ink bg-paper p-0 backdrop:bg-ink/80">
+      <div class="flex items-center justify-between border-b border-ink px-4 py-2">
+        <p id="g-count" class="text-sm tracking-widest" aria-live="polite"></p>
+        <button id="g-close" type="button" class="font-display text-2xl uppercase hover:text-accent">Fechar ✕</button>
+      </div>
+      <figure class="relative">
+        <img id="g-img" alt="" class="max-h-[70vh] w-full bg-ink/5 object-contain">
+        <button id="g-prev" type="button" aria-label="Imagem anterior" class="absolute left-2 top-1/2 -translate-y-1/2 bg-ink px-3 py-2 text-xl text-white hover:bg-accent">←</button>
+        <button id="g-next" type="button" aria-label="Próxima imagem" class="absolute right-2 top-1/2 -translate-y-1/2 bg-ink px-3 py-2 text-xl text-white hover:bg-accent">→</button>
+        <figcaption id="g-alt" class="px-4 py-3 text-sm"></figcaption>
+      </figure>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
