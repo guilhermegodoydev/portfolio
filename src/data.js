@@ -5,8 +5,8 @@ export const projects = [
     text: "Sistema web de gerenciamento de franquias com autenticação JWT e controle de unidades.",
     stack: "Next · Typescript · .NET · PostgreSQL",
     images: [
-        { src: "../public/img/franchiseos/tela_login.png", alt: "Tela de login do Franchiseos" },
-        { src: "../public/img/franchiseos/tela_unidades.png", alt: "Tela de unidades do Franchiseos" },
+        { src: "/img/franchiseos/tela_login.png", alt: "Tela de login do Franchiseos" },
+        { src: "/img/franchiseos/tela_unidades.png", alt: "Tela de unidades do Franchiseos" },
     ],
     alt: "Tela do Franchiseos",
     href: "https://github.com/guilhermegodoydev/franchiseos",
@@ -17,7 +17,7 @@ export const projects = [
     text: "Ferramenta que gera a seção de projetos do portfólio a partir do GitHub. Publicada no NPM.",
     stack: "Open source · NPM",
     images: [
-        { src: "../public/img/snapport/logo.png", alt: "Logo da biblioteca Snapport" },
+        { src: "/img/snapport/logo.png", alt: "Logo da biblioteca Snapport" },
     ],
     alt: "Logo do Snap-Port",
     href: "https://github.com/guilhermegodoydev/snapport",
@@ -28,8 +28,8 @@ export const projects = [
     text: "CRM web em produção.",
     stack: "React · Vite · TypeScript · Supabase",
     images: [
-        { src: "../public/img/nexapulse/tela_inicial.png", alt: "Tela de inicial do Nexapulse" },
-        { src: "../public/img/nexapulse/tela_login.png", alt: "Tela de login do Nexapulse" },
+        { src: "/img/nexapulse/tela_inicial.png", alt: "Tela de inicial do Nexapulse" },
+        { src: "/img/nexapulse/tela_login.png", alt: "Tela de login do Nexapulse" },
     ],
     alt: "Tela do Nexapulse",
     href: "https://github.com/guilhermegodoydev/nexapulse",
